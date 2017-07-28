@@ -1,0 +1,1352 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-28 20:53:43.908854 UTC
+
+interface space-age-1.0.0.3-4bIjblMNKyF5x0tbaTNE6x:SpaceAge 8002
+  interface hash: 889a755afca3700a41b49fd5a281d1c1
+  ABI hash: 24f07edcf4eb6964e63ae5f1b34da011
+  export-list hash: 2b39a0e77a8fb53a61d8046dda34110e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  SpaceAge.ageOn
+  SpaceAge.Planet{SpaceAge.Earth SpaceAge.Jupiter SpaceAge.Mars SpaceAge.Mercury SpaceAge.Neptune SpaceAge.Saturn SpaceAge.Uranus SpaceAge.Venus}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Read b6821365d2d5fa2155c9e910160e7f57
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+3c9504e7f2be564bf73a7e74dbea671e
+  $fBoundedPlanet :: GHC.Enum.Bounded SpaceAge.Planet
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SpaceAge.Planet SpaceAge.Mercury SpaceAge.Neptune -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet :: GHC.Enum.Enum SpaceAge.Planet
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SpaceAge.Planet
+                  SpaceAge.$fEnumPlanet_$csucc
+                  SpaceAge.$fEnumPlanet_$cpred
+                  SpaceAge.$fEnumPlanet_$ctoEnum
+                  SpaceAge.$fEnumPlanet_$cfromEnum
+                  SpaceAge.$fEnumPlanet_$cenumFrom
+                  SpaceAge.$fEnumPlanet_$cenumFromThen
+                  SpaceAge.$fEnumPlanet_$cenumFromTo
+                  SpaceAge.$fEnumPlanet_$cenumFromThenTo -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet1 :: [SpaceAge.Planet]
+  {- Unfolding: (SpaceAge.$fEnumPlanet_go8 7#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet10 :: SpaceAge.Planet
+  {- Strictness: x -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet11 :: SpaceAge.Planet
+  {- Strictness: x -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet2 :: [SpaceAge.Planet]
+  {- Unfolding: (SpaceAge.$fEnumPlanet_go9 6#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet3 :: [SpaceAge.Planet]
+  {- Unfolding: (SpaceAge.$fEnumPlanet_go10 5#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet4 :: [SpaceAge.Planet]
+  {- Unfolding: (SpaceAge.$fEnumPlanet_go11 4#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet5 :: [SpaceAge.Planet]
+  {- Unfolding: (SpaceAge.$fEnumPlanet_go12 3#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet6 :: [SpaceAge.Planet]
+  {- Unfolding: (SpaceAge.$fEnumPlanet_go13 2#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet7 :: [SpaceAge.Planet]
+  {- Unfolding: (SpaceAge.$fEnumPlanet_go14 1#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet8 :: [SpaceAge.Planet]
+  {- Unfolding: (SpaceAge.$fEnumPlanet_go15 0#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet9 :: GHC.Prim.Int# -> SpaceAge.Planet
+  {- Arity: 1, Strictness: <L,U>x -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_$cenumFrom :: SpaceAge.Planet -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: SpaceAge.Planet) ->
+                 case a of wild {
+                   SpaceAge.Mercury -> SpaceAge.$fEnumPlanet8
+                   SpaceAge.Venus -> SpaceAge.$fEnumPlanet7
+                   SpaceAge.Earth -> SpaceAge.$fEnumPlanet6
+                   SpaceAge.Mars -> SpaceAge.$fEnumPlanet5
+                   SpaceAge.Jupiter -> SpaceAge.$fEnumPlanet4
+                   SpaceAge.Saturn -> SpaceAge.$fEnumPlanet3
+                   SpaceAge.Uranus -> SpaceAge.$fEnumPlanet2
+                   SpaceAge.Neptune -> SpaceAge.$fEnumPlanet1 }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_$cenumFromThen ::
+    SpaceAge.Planet -> SpaceAge.Planet -> [SpaceAge.Planet]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: SpaceAge.Planet) (b :: SpaceAge.Planet) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [SpaceAge.Planet]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (b# :: GHC.Prim.Int#)[OneShot] ->
+                         let {
+                           $j2 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+                             {- Arity: 1, Strictness: <S,U> -}
+                           = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# b# a#) of wild {
+                               GHC.Types.False
+                               -> GHC.Enum.efdtIntDnFB
+                                    @ [SpaceAge.Planet]
+                                    SpaceAge.$fEnumPlanet_c
+                                    (GHC.Types.[] @ SpaceAge.Planet)
+                                    a#
+                                    b#
+                                    y
+                               GHC.Types.True
+                               -> GHC.Enum.efdtIntUpFB
+                                    @ [SpaceAge.Planet]
+                                    SpaceAge.$fEnumPlanet_c
+                                    (GHC.Types.[] @ SpaceAge.Planet)
+                                    a#
+                                    b#
+                                    y }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># a# b#) of wild {
+                           GHC.Types.False -> $j2 7# GHC.Types.True -> $j2 0# }
+                     } in
+                     case b of wild {
+                       SpaceAge.Mercury -> $j1 0#
+                       SpaceAge.Venus -> $j1 1#
+                       SpaceAge.Earth -> $j1 2#
+                       SpaceAge.Mars -> $j1 3#
+                       SpaceAge.Jupiter -> $j1 4#
+                       SpaceAge.Saturn -> $j1 5#
+                       SpaceAge.Uranus -> $j1 6#
+                       SpaceAge.Neptune -> $j1 7# }
+                 } in
+                 case a of wild {
+                   SpaceAge.Mercury -> $j 0#
+                   SpaceAge.Venus -> $j 1#
+                   SpaceAge.Earth -> $j 2#
+                   SpaceAge.Mars -> $j 3#
+                   SpaceAge.Jupiter -> $j 4#
+                   SpaceAge.Saturn -> $j 5#
+                   SpaceAge.Uranus -> $j 6#
+                   SpaceAge.Neptune -> $j 7# }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_$cenumFromThenTo ::
+    SpaceAge.Planet
+    -> SpaceAge.Planet -> SpaceAge.Planet -> [SpaceAge.Planet]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_$cenumFromTo ::
+    SpaceAge.Planet -> SpaceAge.Planet -> [SpaceAge.Planet]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: SpaceAge.Planet) (y :: SpaceAge.Planet) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [SpaceAge.Planet]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       SpaceAge.Mercury
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 0#) of wild1 {
+                            GHC.Types.False -> SpaceAge.$fEnumPlanet_go7 x1
+                            GHC.Types.True -> GHC.Types.[] @ SpaceAge.Planet }
+                       SpaceAge.Venus
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 1#) of wild1 {
+                            GHC.Types.False -> SpaceAge.$fEnumPlanet_go6 x1
+                            GHC.Types.True -> GHC.Types.[] @ SpaceAge.Planet }
+                       SpaceAge.Earth
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 2#) of wild1 {
+                            GHC.Types.False -> SpaceAge.$fEnumPlanet_go5 x1
+                            GHC.Types.True -> GHC.Types.[] @ SpaceAge.Planet }
+                       SpaceAge.Mars
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 3#) of wild1 {
+                            GHC.Types.False -> SpaceAge.$fEnumPlanet_go4 x1
+                            GHC.Types.True -> GHC.Types.[] @ SpaceAge.Planet }
+                       SpaceAge.Jupiter
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 4#) of wild1 {
+                            GHC.Types.False -> SpaceAge.$fEnumPlanet_go3 x1
+                            GHC.Types.True -> GHC.Types.[] @ SpaceAge.Planet }
+                       SpaceAge.Saturn
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 5#) of wild1 {
+                            GHC.Types.False -> SpaceAge.$fEnumPlanet_go2 x1
+                            GHC.Types.True -> GHC.Types.[] @ SpaceAge.Planet }
+                       SpaceAge.Uranus
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 6#) of wild1 {
+                            GHC.Types.False -> SpaceAge.$fEnumPlanet_go1 x1
+                            GHC.Types.True -> GHC.Types.[] @ SpaceAge.Planet }
+                       SpaceAge.Neptune
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 7#) of wild1 {
+                            GHC.Types.False -> SpaceAge.$fEnumPlanet_go x1
+                            GHC.Types.True -> GHC.Types.[] @ SpaceAge.Planet } }
+                 } in
+                 case x of wild {
+                   SpaceAge.Mercury -> $j 0#
+                   SpaceAge.Venus -> $j 1#
+                   SpaceAge.Earth -> $j 2#
+                   SpaceAge.Mars -> $j 3#
+                   SpaceAge.Jupiter -> $j 4#
+                   SpaceAge.Saturn -> $j 5#
+                   SpaceAge.Uranus -> $j 6#
+                   SpaceAge.Neptune -> $j 7# }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_$cfromEnum :: SpaceAge.Planet -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: SpaceAge.Planet) ->
+                 case w of wild {
+                   SpaceAge.Mercury -> GHC.Types.I# 0#
+                   SpaceAge.Venus -> GHC.Types.I# 1#
+                   SpaceAge.Earth -> GHC.Types.I# 2#
+                   SpaceAge.Mars -> GHC.Types.I# 3#
+                   SpaceAge.Jupiter -> GHC.Types.I# 4#
+                   SpaceAge.Saturn -> GHC.Types.I# 5#
+                   SpaceAge.Uranus -> GHC.Types.I# 6#
+                   SpaceAge.Neptune -> GHC.Types.I# 7# }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_$cpred :: SpaceAge.Planet -> SpaceAge.Planet
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: SpaceAge.Planet) ->
+                 case a of wild {
+                   SpaceAge.Mercury -> SpaceAge.$fEnumPlanet10
+                   SpaceAge.Venus -> SpaceAge.Mercury
+                   SpaceAge.Earth -> SpaceAge.Venus
+                   SpaceAge.Mars -> SpaceAge.Earth
+                   SpaceAge.Jupiter -> SpaceAge.Mars
+                   SpaceAge.Saturn -> SpaceAge.Jupiter
+                   SpaceAge.Uranus -> SpaceAge.Saturn
+                   SpaceAge.Neptune -> SpaceAge.Uranus }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_$csucc :: SpaceAge.Planet -> SpaceAge.Planet
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: SpaceAge.Planet) ->
+                 case a of wild {
+                   SpaceAge.Mercury -> SpaceAge.Venus
+                   SpaceAge.Venus -> SpaceAge.Earth
+                   SpaceAge.Earth -> SpaceAge.Mars
+                   SpaceAge.Mars -> SpaceAge.Jupiter
+                   SpaceAge.Jupiter -> SpaceAge.Saturn
+                   SpaceAge.Saturn -> SpaceAge.Uranus
+                   SpaceAge.Uranus -> SpaceAge.Neptune
+                   SpaceAge.Neptune -> SpaceAge.$fEnumPlanet11 }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_$ctoEnum :: GHC.Types.Int -> SpaceAge.Planet
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> SpaceAge.$w$ctoEnum ww1 }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_c ::
+    GHC.Types.Int -> [SpaceAge.Planet] -> [SpaceAge.Planet]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [SpaceAge.Planet]) ->
+                 GHC.Types.:
+                   @ SpaceAge.Planet
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ SpaceAge.Planet a })
+                   ys) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go1 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go10 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go11 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go12 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go13 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go14 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go15 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go2 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go3 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go4 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go5 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go6 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go7 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go8 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEnumPlanet_go9 :: GHC.Prim.Int# -> [SpaceAge.Planet]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEqPlanet :: GHC.Classes.Eq SpaceAge.Planet
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SpaceAge.Planet
+                  SpaceAge.$fEqPlanet_$c==
+                  SpaceAge.$fEqPlanet_$c/= -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEqPlanet_$c/= ::
+    SpaceAge.Planet -> SpaceAge.Planet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: SpaceAge.Planet) (b :: SpaceAge.Planet) ->
+                 case a of wild {
+                   SpaceAge.Mercury
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True SpaceAge.Mercury -> GHC.Types.False }
+                   SpaceAge.Venus
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True SpaceAge.Venus -> GHC.Types.False }
+                   SpaceAge.Earth
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True SpaceAge.Earth -> GHC.Types.False }
+                   SpaceAge.Mars
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True SpaceAge.Mars -> GHC.Types.False }
+                   SpaceAge.Jupiter
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True SpaceAge.Jupiter -> GHC.Types.False }
+                   SpaceAge.Saturn
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True SpaceAge.Saturn -> GHC.Types.False }
+                   SpaceAge.Uranus
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True SpaceAge.Uranus -> GHC.Types.False }
+                   SpaceAge.Neptune
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        SpaceAge.Neptune -> GHC.Types.False } }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fEqPlanet_$c== ::
+    SpaceAge.Planet -> SpaceAge.Planet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: SpaceAge.Planet) (ds1 :: SpaceAge.Planet) ->
+                 case ds of wild {
+                   SpaceAge.Mercury
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False SpaceAge.Mercury -> GHC.Types.True }
+                   SpaceAge.Venus
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False SpaceAge.Venus -> GHC.Types.True }
+                   SpaceAge.Earth
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False SpaceAge.Earth -> GHC.Types.True }
+                   SpaceAge.Mars
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False SpaceAge.Mars -> GHC.Types.True }
+                   SpaceAge.Jupiter
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False SpaceAge.Jupiter -> GHC.Types.True }
+                   SpaceAge.Saturn
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False SpaceAge.Saturn -> GHC.Types.True }
+                   SpaceAge.Uranus
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False SpaceAge.Uranus -> GHC.Types.True }
+                   SpaceAge.Neptune
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        SpaceAge.Neptune -> GHC.Types.True } }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fOrdPlanet :: GHC.Classes.Ord SpaceAge.Planet
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SpaceAge.Planet
+                  SpaceAge.$fEqPlanet
+                  SpaceAge.$fOrdPlanet_$ccompare
+                  SpaceAge.$fOrdPlanet_$c<
+                  SpaceAge.$fOrdPlanet_$c<=
+                  SpaceAge.$fOrdPlanet_$c>
+                  SpaceAge.$fOrdPlanet_$c>=
+                  SpaceAge.$fOrdPlanet_$cmax
+                  SpaceAge.$fOrdPlanet_$cmin -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fOrdPlanet_$c< ::
+    SpaceAge.Planet -> SpaceAge.Planet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: SpaceAge.Planet) (b :: SpaceAge.Planet) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case b of wild {
+                       SpaceAge.Mercury
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# a# 0#)
+                       SpaceAge.Venus
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# a# 1#)
+                       SpaceAge.Earth
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# a# 2#)
+                       SpaceAge.Mars
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# a# 3#)
+                       SpaceAge.Jupiter
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# a# 4#)
+                       SpaceAge.Saturn
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# a# 5#)
+                       SpaceAge.Uranus
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# a# 6#)
+                       SpaceAge.Neptune
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# a# 7#) }
+                 } in
+                 case a of wild {
+                   SpaceAge.Mercury -> $j 0#
+                   SpaceAge.Venus -> $j 1#
+                   SpaceAge.Earth -> $j 2#
+                   SpaceAge.Mars -> $j 3#
+                   SpaceAge.Jupiter -> $j 4#
+                   SpaceAge.Saturn -> $j 5#
+                   SpaceAge.Uranus -> $j 6#
+                   SpaceAge.Neptune -> $j 7# }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fOrdPlanet_$c<= ::
+    SpaceAge.Planet -> SpaceAge.Planet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: SpaceAge.Planet) (b :: SpaceAge.Planet) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case b of wild {
+                       SpaceAge.Mercury
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# a# 0#)
+                       SpaceAge.Venus
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# a# 1#)
+                       SpaceAge.Earth
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# a# 2#)
+                       SpaceAge.Mars
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# a# 3#)
+                       SpaceAge.Jupiter
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# a# 4#)
+                       SpaceAge.Saturn
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# a# 5#)
+                       SpaceAge.Uranus
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# a# 6#)
+                       SpaceAge.Neptune
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<=# a# 7#) }
+                 } in
+                 case a of wild {
+                   SpaceAge.Mercury -> $j 0#
+                   SpaceAge.Venus -> $j 1#
+                   SpaceAge.Earth -> $j 2#
+                   SpaceAge.Mars -> $j 3#
+                   SpaceAge.Jupiter -> $j 4#
+                   SpaceAge.Saturn -> $j 5#
+                   SpaceAge.Uranus -> $j 6#
+                   SpaceAge.Neptune -> $j 7# }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fOrdPlanet_$c> ::
+    SpaceAge.Planet -> SpaceAge.Planet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: SpaceAge.Planet) (b :: SpaceAge.Planet) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case b of wild {
+                       SpaceAge.Mercury
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># a# 0#)
+                       SpaceAge.Venus
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># a# 1#)
+                       SpaceAge.Earth
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># a# 2#)
+                       SpaceAge.Mars
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># a# 3#)
+                       SpaceAge.Jupiter
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># a# 4#)
+                       SpaceAge.Saturn
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># a# 5#)
+                       SpaceAge.Uranus
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># a# 6#)
+                       SpaceAge.Neptune
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># a# 7#) }
+                 } in
+                 case a of wild {
+                   SpaceAge.Mercury -> $j 0#
+                   SpaceAge.Venus -> $j 1#
+                   SpaceAge.Earth -> $j 2#
+                   SpaceAge.Mars -> $j 3#
+                   SpaceAge.Jupiter -> $j 4#
+                   SpaceAge.Saturn -> $j 5#
+                   SpaceAge.Uranus -> $j 6#
+                   SpaceAge.Neptune -> $j 7# }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fOrdPlanet_$c>= ::
+    SpaceAge.Planet -> SpaceAge.Planet -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: SpaceAge.Planet) (b :: SpaceAge.Planet) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case b of wild {
+                       SpaceAge.Mercury
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>=# a# 0#)
+                       SpaceAge.Venus
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>=# a# 1#)
+                       SpaceAge.Earth
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>=# a# 2#)
+                       SpaceAge.Mars
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>=# a# 3#)
+                       SpaceAge.Jupiter
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>=# a# 4#)
+                       SpaceAge.Saturn
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>=# a# 5#)
+                       SpaceAge.Uranus
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>=# a# 6#)
+                       SpaceAge.Neptune
+                       -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.>=# a# 7#) }
+                 } in
+                 case a of wild {
+                   SpaceAge.Mercury -> $j 0#
+                   SpaceAge.Venus -> $j 1#
+                   SpaceAge.Earth -> $j 2#
+                   SpaceAge.Mars -> $j 3#
+                   SpaceAge.Jupiter -> $j 4#
+                   SpaceAge.Saturn -> $j 5#
+                   SpaceAge.Uranus -> $j 6#
+                   SpaceAge.Neptune -> $j 7# }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fOrdPlanet_$ccompare ::
+    SpaceAge.Planet -> SpaceAge.Planet -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: SpaceAge.Planet) (b :: SpaceAge.Planet) ->
+                 case a of wild {
+                   SpaceAge.Mercury
+                   -> case b of wild1 {
+                        SpaceAge.Mercury -> GHC.Types.EQ
+                        SpaceAge.Venus -> GHC.Types.LT
+                        SpaceAge.Earth -> GHC.Types.LT
+                        SpaceAge.Mars -> GHC.Types.LT
+                        SpaceAge.Jupiter -> GHC.Types.LT
+                        SpaceAge.Saturn -> GHC.Types.LT
+                        SpaceAge.Uranus -> GHC.Types.LT
+                        SpaceAge.Neptune -> GHC.Types.LT }
+                   SpaceAge.Venus
+                   -> case b of wild1 {
+                        SpaceAge.Mercury -> GHC.Types.GT
+                        SpaceAge.Venus -> GHC.Types.EQ
+                        SpaceAge.Earth -> GHC.Types.LT
+                        SpaceAge.Mars -> GHC.Types.LT
+                        SpaceAge.Jupiter -> GHC.Types.LT
+                        SpaceAge.Saturn -> GHC.Types.LT
+                        SpaceAge.Uranus -> GHC.Types.LT
+                        SpaceAge.Neptune -> GHC.Types.LT }
+                   SpaceAge.Earth
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        SpaceAge.Earth -> GHC.Types.EQ
+                        SpaceAge.Mars -> GHC.Types.LT
+                        SpaceAge.Jupiter -> GHC.Types.LT
+                        SpaceAge.Saturn -> GHC.Types.LT
+                        SpaceAge.Uranus -> GHC.Types.LT
+                        SpaceAge.Neptune -> GHC.Types.LT }
+                   SpaceAge.Mars
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        SpaceAge.Mars -> GHC.Types.EQ
+                        SpaceAge.Jupiter -> GHC.Types.LT
+                        SpaceAge.Saturn -> GHC.Types.LT
+                        SpaceAge.Uranus -> GHC.Types.LT
+                        SpaceAge.Neptune -> GHC.Types.LT }
+                   SpaceAge.Jupiter
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        SpaceAge.Jupiter -> GHC.Types.EQ
+                        SpaceAge.Saturn -> GHC.Types.LT
+                        SpaceAge.Uranus -> GHC.Types.LT
+                        SpaceAge.Neptune -> GHC.Types.LT }
+                   SpaceAge.Saturn
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        SpaceAge.Saturn -> GHC.Types.EQ
+                        SpaceAge.Uranus -> GHC.Types.LT
+                        SpaceAge.Neptune -> GHC.Types.LT }
+                   SpaceAge.Uranus
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        SpaceAge.Uranus -> GHC.Types.EQ
+                        SpaceAge.Neptune -> GHC.Types.LT }
+                   SpaceAge.Neptune
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT SpaceAge.Neptune -> GHC.Types.EQ } }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fOrdPlanet_$cmax ::
+    SpaceAge.Planet -> SpaceAge.Planet -> SpaceAge.Planet
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: SpaceAge.Planet) (y :: SpaceAge.Planet) ->
+                 case SpaceAge.$fOrdPlanet_$c<= x y of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fOrdPlanet_$cmin ::
+    SpaceAge.Planet -> SpaceAge.Planet -> SpaceAge.Planet
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: SpaceAge.Planet) (y :: SpaceAge.Planet) ->
+                 case SpaceAge.$fOrdPlanet_$c<= x y of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet :: GHC.Read.Read SpaceAge.Planet
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SpaceAge.Planet
+                  SpaceAge.$fReadPlanet_$creadsPrec
+                  SpaceAge.$fReadPlanet_$creadList
+                  SpaceAge.$fReadPlanet_$creadPrec
+                  SpaceAge.$fReadPlanet_$creadListPrec -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       ([SpaceAge.Planet] -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta1 :: [SpaceAge.Planet] -> Text.ParserCombinators.ReadP.P b) ->
+                 GHC.Read.list1
+                   @ SpaceAge.Planet
+                   SpaceAge.$fReadPlanet2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <SpaceAge.Planet>_R))
+                   eta
+                   @ b
+                   eta1) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet10 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+                   SpaceAge.$fReadPlanet15
+                   SpaceAge.$fReadPlanet11) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet11 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+                   SpaceAge.$fReadPlanet12
+                   (GHC.Types.[]
+                      @ (GHC.Base.String,
+                         Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet12 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+  {- Strictness: m,
+     Unfolding: ((SpaceAge.$fReadPlanet14,
+                  SpaceAge.$fReadPlanet13
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <SpaceAge.Planet>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet13 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b) ->
+                 eta SpaceAge.Neptune) -}
+6f328660432cdd3c23008e5601dc8d9a
+  $fReadPlanet14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Neptune"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet15 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+  {- Strictness: m,
+     Unfolding: ((SpaceAge.$fReadPlanet17,
+                  SpaceAge.$fReadPlanet16
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <SpaceAge.Planet>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet16 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b) ->
+                 eta SpaceAge.Uranus) -}
+306f0773ac0e94b574c3fa4e4e199c27
+  $fReadPlanet17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Uranus"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet18 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+  {- Strictness: m,
+     Unfolding: ((SpaceAge.$fReadPlanet20,
+                  SpaceAge.$fReadPlanet19
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <SpaceAge.Planet>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet19 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b) ->
+                 eta SpaceAge.Saturn) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP SpaceAge.Planet
+  {- Arity: 1,
+     Unfolding: (GHC.Read.parens1
+                   @ SpaceAge.Planet
+                   SpaceAge.$fReadPlanet3
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <SpaceAge.Planet>_R))) -}
+6dc183541877646c1560ed7f8718b472
+  $fReadPlanet20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Saturn"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet21 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+  {- Strictness: m,
+     Unfolding: ((SpaceAge.$fReadPlanet23,
+                  SpaceAge.$fReadPlanet22
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <SpaceAge.Planet>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet22 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b) ->
+                 eta SpaceAge.Jupiter) -}
+e25ce05553af1c479bc26beee663621a
+  $fReadPlanet23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Jupiter"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet24 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+  {- Strictness: m,
+     Unfolding: ((SpaceAge.$fReadPlanet26,
+                  SpaceAge.$fReadPlanet25
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <SpaceAge.Planet>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet25 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b) ->
+                 eta SpaceAge.Mars) -}
+f62267983dbe2f11085efa886deb10a5
+  $fReadPlanet26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Mars"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet27 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+  {- Strictness: m,
+     Unfolding: ((SpaceAge.$fReadPlanet29,
+                  SpaceAge.$fReadPlanet28
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <SpaceAge.Planet>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet28 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b) ->
+                 eta SpaceAge.Earth) -}
+6baa4b9589ae2d529954ceb715d5845b
+  $fReadPlanet29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Earth"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP SpaceAge.Planet
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec) ->
+                 GHC.Read.choose2 @ SpaceAge.Planet SpaceAge.$fReadPlanet4 eta) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet30 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+  {- Strictness: m,
+     Unfolding: ((SpaceAge.$fReadPlanet32,
+                  SpaceAge.$fReadPlanet31
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <SpaceAge.Planet>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet31 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b) ->
+                 eta SpaceAge.Venus) -}
+7c9fc20898322d855a16f233de0ac42c
+  $fReadPlanet32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Venus"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet33 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+  {- Strictness: m,
+     Unfolding: ((SpaceAge.$fReadPlanet35,
+                  SpaceAge.$fReadPlanet34
+                    `cast`
+                  (Trans
+                       (<Text.ParserCombinators.ReadPrec.Prec>_R
+                        ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                      <SpaceAge.Planet>_R))
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet34 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (eta :: SpaceAge.Planet -> Text.ParserCombinators.ReadP.P b) ->
+                 eta SpaceAge.Mercury) -}
+f30c9baa0a34db956dc158d366a88c84
+  $fReadPlanet35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Mercury"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet36 :: Text.ParserCombinators.ReadP.P [SpaceAge.Planet]
+  {- Unfolding: (GHC.Read.list1
+                   @ SpaceAge.Planet
+                   SpaceAge.$fReadPlanet2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <SpaceAge.Planet>_R))
+                   GHC.Read.$fRead()5
+                   @ [SpaceAge.Planet]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [SpaceAge.Planet])) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet4 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+                   SpaceAge.$fReadPlanet33
+                   SpaceAge.$fReadPlanet5) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet5 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+                   SpaceAge.$fReadPlanet30
+                   SpaceAge.$fReadPlanet6) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet6 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+                   SpaceAge.$fReadPlanet27
+                   SpaceAge.$fReadPlanet7) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet7 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+                   SpaceAge.$fReadPlanet24
+                   SpaceAge.$fReadPlanet8) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet8 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+                   SpaceAge.$fReadPlanet21
+                   SpaceAge.$fReadPlanet9) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet9 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet)
+                   SpaceAge.$fReadPlanet18
+                   SpaceAge.$fReadPlanet10) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [SpaceAge.Planet]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [SpaceAge.Planet]
+                   SpaceAge.$fReadPlanet36) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [SpaceAge.Planet]
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                SpaceAge.$fReadPlanet1
+                  `cast`
+                (Trans
+                     (<Text.ParserCombinators.ReadPrec.Prec>_R
+                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                    <[SpaceAge.Planet]>_R))
+                     (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                               <[SpaceAge.Planet]>_R))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet_$creadPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec SpaceAge.Planet
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                SpaceAge.$fReadPlanet2
+                  `cast`
+                (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                          <SpaceAge.Planet>_R)) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fReadPlanet_$creadsPrec ::
+    GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS SpaceAge.Planet
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ SpaceAge.Planet
+                   ((GHC.Read.parens1
+                       @ SpaceAge.Planet
+                       SpaceAge.$fReadPlanet3
+                         `cast`
+                       (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                 <SpaceAge.Planet>_R))
+                       eta)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0] <SpaceAge.Planet>_R)
+                      @ SpaceAge.Planet
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ SpaceAge.Planet))) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fShowPlanet :: GHC.Show.Show SpaceAge.Planet
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ SpaceAge.Planet
+                  SpaceAge.$fShowPlanet_$cshowsPrec
+                  SpaceAge.$fShowPlanet_$cshow
+                  SpaceAge.$fShowPlanet_$cshowList -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fShowPlanet_$cshow :: SpaceAge.Planet -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: SpaceAge.Planet) ->
+                 SpaceAge.$fShowPlanet_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fShowPlanet_$cshowList :: [SpaceAge.Planet] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ SpaceAge.Planet
+                   SpaceAge.$w$cshowsPrec) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $fShowPlanet_$cshowsPrec ::
+    GHC.Types.Int -> SpaceAge.Planet -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: SpaceAge.Planet)
+                   (w2 :: GHC.Base.String) ->
+                 SpaceAge.$w$cshowsPrec w1 w2) -}
+baa2f70d3df092cadcec9b57b9666269
+  $tc'Earth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12384149005005995823##
+                   5890743831104764657##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Earth1) -}
+d3c108f05861512817aa96d8818ee74c
+  $tc'Earth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Earth"#) -}
+fcca9f222a74a37ca0d7c8797a1036c0
+  $tc'Jupiter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16482969062340584971##
+                   906027043801091565##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Jupiter1) -}
+64bdef82c2c8c3a8da7b7249c33c5cac
+  $tc'Jupiter1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Jupiter"#) -}
+6d5c54487d44f5892aa4eb62e76b2497
+  $tc'Mars :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11202325942570391298##
+                   7283095334731112464##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Mars1) -}
+3e2e6100fb3ed1b5a81c2434bdf445f6
+  $tc'Mars1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Mars"#) -}
+bf33dec78a5990026036505319164f4c
+  $tc'Mercury :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10018663343542272790##
+                   9214996572002389726##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Mercury1) -}
+9ccbd2a0031b96dcc488f39ef41fdb7a
+  $tc'Mercury1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Mercury"#) -}
+516ba649740b013267af0ec0be825b8e
+  $tc'Neptune :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14815255210666811665##
+                   8632082941347926645##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Neptune1) -}
+e62faf9fd0cf4b5d5daee3d50847049a
+  $tc'Neptune1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Neptune"#) -}
+be52d554fd93a135c2deb3a3c5a98ead
+  $tc'Saturn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5074685867890293521##
+                   8731171330916402168##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Saturn1) -}
+db8a5343643aa265578c91e51bf0c15c
+  $tc'Saturn1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Saturn"#) -}
+ce3c9c632938e1220dd66e8e9982835b
+  $tc'Uranus :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8685045415935727671##
+                   12379778544233582180##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Uranus1) -}
+227dcc921c49535e40ec90432229fa6e
+  $tc'Uranus1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Uranus"#) -}
+1ebd18bc63f704b877d5c25133f27235
+  $tc'Venus :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5647380466809817902##
+                   17678168246749089256##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Venus1) -}
+e904def909b26fbad1ad3ed94fe0b3ad
+  $tc'Venus1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Venus"#) -}
+22b2a3d9e5d0a19c1dfe2218520d2e40
+  $tcPlanet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10810596846028814359##
+                   2764653276595354998##
+                   SpaceAge.$trModule
+                   SpaceAge.$tcPlanet1) -}
+380fc99bbdf6af77fb8cf4cfb19c7c2d
+  $tcPlanet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Planet"#) -}
+647b3b89a7c72f575429d00f1438cdd5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   SpaceAge.$trModule2
+                   SpaceAge.$trModule1) -}
+658b118b4f3d68568259eba7e4fee9f8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "SpaceAge"#) -}
+bbba813e597c309d11c6ba61ba1bec9b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "space-age-1.0.0.3-4bIjblMNKyF5x0tbaTNE6x"#) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $w$cshowsPrec ::
+    SpaceAge.Planet -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: SpaceAge.Planet) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   SpaceAge.Mercury
+                   -> GHC.Base.++ @ GHC.Types.Char SpaceAge.$fReadPlanet35 w1
+                   SpaceAge.Venus
+                   -> GHC.Base.++ @ GHC.Types.Char SpaceAge.$fReadPlanet32 w1
+                   SpaceAge.Earth
+                   -> GHC.Base.++ @ GHC.Types.Char SpaceAge.$fReadPlanet29 w1
+                   SpaceAge.Mars
+                   -> GHC.Base.++ @ GHC.Types.Char SpaceAge.$fReadPlanet26 w1
+                   SpaceAge.Jupiter
+                   -> GHC.Base.++ @ GHC.Types.Char SpaceAge.$fReadPlanet23 w1
+                   SpaceAge.Saturn
+                   -> GHC.Base.++ @ GHC.Types.Char SpaceAge.$fReadPlanet20 w1
+                   SpaceAge.Uranus
+                   -> GHC.Base.++ @ GHC.Types.Char SpaceAge.$fReadPlanet17 w1
+                   SpaceAge.Neptune
+                   -> GHC.Base.++ @ GHC.Types.Char SpaceAge.$fReadPlanet14 w1 }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  $w$ctoEnum :: GHC.Prim.Int# -> SpaceAge.Planet
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> SpaceAge.$fEnumPlanet9 ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 7#) of wild1 {
+                        GHC.Types.False -> SpaceAge.$fEnumPlanet9 ww
+                        GHC.Types.True -> GHC.Prim.tagToEnum# @ SpaceAge.Planet ww } }) -}
+941dbfa3a6fca9d4890328dec17703fb
+  $wageOn :: SpaceAge.Planet -> GHC.Prim.Float# -> GHC.Prim.Float#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ (w :: SpaceAge.Planet) (ww :: GHC.Prim.Float#) ->
+                 let {
+                   $w$j :: GHC.Prim.Void# -> GHC.Prim.Float#
+                     {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                   = \ (void :: GHC.Prim.Void#)[OneShot] ->
+                     case w of wild {
+                       DEFAULT -> GHC.Prim.divideFloat# ww 3.15576e7#
+                       SpaceAge.Venus
+                       -> GHC.Prim.divideFloat#
+                            (GHC.Prim.divideFloat# ww 3.15576e7#)
+                            0.61519724#
+                       SpaceAge.Mars
+                       -> GHC.Prim.divideFloat#
+                            (GHC.Prim.divideFloat# ww 3.15576e7#)
+                            1.8808157#
+                       SpaceAge.Jupiter
+                       -> GHC.Prim.divideFloat#
+                            (GHC.Prim.divideFloat# ww 3.15576e7#)
+                            11.862615#
+                       SpaceAge.Saturn
+                       -> GHC.Prim.divideFloat#
+                            (GHC.Prim.divideFloat# ww 3.15576e7#)
+                            29.447498#
+                       SpaceAge.Uranus
+                       -> GHC.Prim.divideFloat#
+                            (GHC.Prim.divideFloat# ww 3.15576e7#)
+                            84.016846#
+                       SpaceAge.Neptune
+                       -> GHC.Prim.divideFloat#
+                            (GHC.Prim.divideFloat# ww 3.15576e7#)
+                            164.79132# }
+                 } in
+                 case w of wild {
+                   SpaceAge.Mercury
+                   -> GHC.Prim.divideFloat#
+                        (GHC.Prim.divideFloat# ww 3.15576e7#)
+                        0.2408467#
+                   SpaceAge.Venus -> $w$j GHC.Prim.void#
+                   SpaceAge.Earth -> $w$j GHC.Prim.void#
+                   SpaceAge.Mars -> $w$j GHC.Prim.void#
+                   SpaceAge.Jupiter -> $w$j GHC.Prim.void#
+                   SpaceAge.Saturn -> $w$j GHC.Prim.void#
+                   SpaceAge.Uranus -> $w$j GHC.Prim.void#
+                   SpaceAge.Neptune -> $w$j GHC.Prim.void# }) -}
+3c9504e7f2be564bf73a7e74dbea671e
+  data Planet
+    = Mercury
+    | Venus
+    | Earth
+    | Mars
+    | Jupiter
+    | Saturn
+    | Uranus
+    | Neptune
+eccba00a8003d5215de254b136e47299
+  ageOn :: SpaceAge.Planet -> GHC.Types.Float -> GHC.Types.Float
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S(S),1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: SpaceAge.Planet) (w1 :: GHC.Types.Float) ->
+                 case w1 of ww { GHC.Types.F# ww1 ->
+                 case SpaceAge.$wageOn w ww1 of ww2 { DEFAULT ->
+                 GHC.Types.F# ww2 } }) -}
+instance [safe] GHC.Enum.Bounded [SpaceAge.Planet]
+  = SpaceAge.$fBoundedPlanet
+instance [safe] GHC.Enum.Enum [SpaceAge.Planet]
+  = SpaceAge.$fEnumPlanet
+instance [safe] GHC.Classes.Eq [SpaceAge.Planet]
+  = SpaceAge.$fEqPlanet
+instance [safe] GHC.Classes.Ord [SpaceAge.Planet]
+  = SpaceAge.$fOrdPlanet
+instance [safe] GHC.Read.Read [SpaceAge.Planet]
+  = SpaceAge.$fReadPlanet
+instance [safe] GHC.Show.Show [SpaceAge.Planet]
+  = SpaceAge.$fShowPlanet
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
