@@ -1,0 +1,111 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-30 02:07:29.844183 UTC
+
+interface run-length-encoding-1.0.0.3-1yhuJkF6HTz7uP47uqEee0:RunLength 8002
+  interface hash: a69f356e97691f79b1450a7dd0dd2ab1
+  ABI hash: 87da55abac44534af26b2ab3db7cba04
+  export-list hash: 449effd4f0add5457be69e19b8911ba3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab396f11155bd696ab63895436e6f1df
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  RunLength.decode
+  RunLength.encode
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+64dcc063667c9f6d7adac7a366c00062
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   RunLength.$trModule2
+                   RunLength.$trModule1) -}
+a589fa349d5d92a63a4f61cfd702b3ea
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RunLength"#) -}
+8e8d866c5182f5fef07f87e79629e3ba
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "run-length-encoding-1.0.0.3-1yhuJkF6HTz7uP47uqEee0"#) -}
+4c96e8059bb11b1ace6a675ac0befaf2
+  decode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <B,A>x,
+     Unfolding: InlineRule (1, True, True)
+                (\ (encode1 :: GHC.Base.String) -> RunLength.decode1) -}
+0ca605cf68f0560ac087712fd21232ba
+  decode1 :: GHC.Base.String
+  {- Strictness: x -}
+f2ca0f7d0218f8550e98c6a59e151b08
+  encode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [GHC.Types.Char]) ->
+                 case ds of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : ipv ipv1
+                   -> RunLength.encode_go
+                        (GHC.Base.map
+                           @ [GHC.Types.Char]
+                           @ [GHC.Types.Char]
+                           RunLength.stringLength
+                           (Data.OldList.groupBy
+                              @ GHC.Types.Char
+                              GHC.Classes.eqChar
+                              wild)) }) -}
+648dc0e84ce7e01a57ae93b02a4b9bb1
+  encode_go :: [[GHC.Types.Char]] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+5a302573f95d21cf694a43619e93e367
+  stringLength :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 case s of wild {
+                   [] -> case GHC.List.scanl2 ret_ty GHC.Base.String of {}
+                   : ds1 xs
+                   -> case GHC.Base.eqString
+                             xs
+                             (GHC.Types.[] @ GHC.Types.Char) of wild1 {
+                        GHC.Types.False
+                        -> case GHC.List.$wlenAcc
+                                  @ GHC.Types.Char
+                                  wild
+                                  0# of ww2 { DEFAULT ->
+                           case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ww2
+                                  (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Base.++
+                             @ GHC.Types.Char
+                             (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                ds1
+                                (GHC.Types.[] @ GHC.Types.Char)) } }
+                        GHC.Types.True -> wild } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
